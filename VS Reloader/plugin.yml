@@ -1,0 +1,6 @@
+author: Daniel Scalzi
+description: Library to reload VirtualShop
+main: com.dscalzi.vsreloader.Main
+name: VSReloader
+version: 1.9.4-R0.2
+depend: [VirtualShop]
