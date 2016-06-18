@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dscalzi</groupId>
   <artifactId>VSReloader</artifactId>
-  <version>1.9.4-R0.2</version>
+  <version>AvSoft 1.10-R0.1-SNAPSHOT</version>
   <name>VirtualShop Reloader</name>
   <description>Extension of VirtualShop to allow easy reloading.</description>
   <build>
@@ -29,7 +29,7 @@
 	<dependency>
            <groupId>org.spigotmc</groupId>
            <artifactId>spigot-api</artifactId>
-           <version>1.9.4-R0.1-SNAPSHOT</version>
+           <version>1.10-R0.1-SNAPSHOT</version>
            <scope>provided</scope>
     </dependency>
   </dependencies>
