@@ -26,6 +26,11 @@ import org.bukkit.plugin.RegisteredListener;
 public class PluginUtil {
 
 	public static void reload(Plugin plugin) {
+		//Prima
+		String nome = Main.getInstance().getName();
+		unload(Main.getInstance());
+		load(nome);
+		//Poi
 		String name = plugin.getName();
         if (plugin != null) {
             unload(plugin);
