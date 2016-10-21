@@ -9,4 +9,5 @@ pipelines:
   default:
     - step:
         script: # Modify the commands below to build your repository.
+          - mvn -f VS Reloader/VS Reloader/pom.xml
           - mvn clean install
