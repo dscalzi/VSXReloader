@@ -13,7 +13,7 @@
                 <targetPath>.</targetPath>
                 <directory>${basedir}/src/com/dscalzi/resources/</directory>
             </resource>
-        </resources>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
