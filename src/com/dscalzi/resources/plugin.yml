@@ -2,5 +2,5 @@ author: Daniel Scalzi
 description: Library to reload VirtualShop
 main: com.dscalzi.vsreloader.Main
 name: VSReloader
-version: AvSoft 1.10.2-R0.1-SNAPSHOT
+version: AvSoft 1.11-R0.1-SNAPSHOT
 depend: [VirtualShop]
