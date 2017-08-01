@@ -6,6 +6,10 @@
   <name>VirtualShop Reloader</name>
   <description>Extension of VirtualShop to allow easy reloading.</description>
   
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
   <developers>
   	<developer>
          <name>Daniel Scalzi (TheKraken7)</name>
