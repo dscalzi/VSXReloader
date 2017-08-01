@@ -1,3 +1,8 @@
+/*
+ * VSReloader
+ * Copyright (C) 2016-2017 Daniel D. Scalzi
+ * See License.txt for license information.
+ */
 package com.dscalzi.vsreloader;
 
 import java.io.File;
