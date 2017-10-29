@@ -1,6 +1,6 @@
 author: Daniel Scalzi
-description: Extension of VirtualShop to allow easy reloading.
-main: com.dscalzi.vsreloader.Main
-name: VSReloader
+description: Extension of VirtualShopX to allow easy reloading.
+main: com.dscalzi.vsxreloader.VSXReloader
+name: VSXReloader
 version: 0.5.0
-depend: [VirtualShop]
+depend: [VirtualShopX]

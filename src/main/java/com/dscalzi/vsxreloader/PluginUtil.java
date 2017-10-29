@@ -1,9 +1,9 @@
 /*
- * VSReloader
+ * VSXReloader
  * Copyright (C) 2016-2017 Daniel D. Scalzi
  * See License.txt for license information.
  */
-package com.dscalzi.vsreloader;
+package com.dscalzi.vsxreloader;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,8 +32,8 @@ public class PluginUtil {
 
 	public static void reload(Plugin plugin) {
 		//Prima
-		String nome = Main.getInstance().getName();
-		unload(Main.getInstance());
+		String nome = VSXReloader.getInstance().getName();
+		unload(VSXReloader.getInstance());
 		load(nome);
 		//Poi
 		String name = plugin.getName();
@@ -50,7 +50,7 @@ public class PluginUtil {
         File pluginDir = new File("plugins");
 
         if (!pluginDir.isDirectory()){
-            Main.getInstance().getLogger().severe("Plugin direcroty not found.");
+            VSXReloader.getInstance().getLogger().severe("Plugin directory not found.");
             return;
         }
 
@@ -60,13 +60,13 @@ public class PluginUtil {
             for (File f : pluginDir.listFiles()) {
                 if (f.getName().endsWith(".jar")) {
                     try {
-                        PluginDescriptionFile desc = Main.getInstance().getPluginLoader().getPluginDescription(f);
+                        PluginDescriptionFile desc = VSXReloader.getInstance().getPluginLoader().getPluginDescription(f);
                         if (desc.getName().equalsIgnoreCase(name)) {
                             pluginFile = f;
                             break;
                         }
                     } catch (InvalidDescriptionException e) {
-                        Main.getInstance().getLogger().severe("Invalid Description");
+                        VSXReloader.getInstance().getLogger().severe("Invalid Description");
                         return;
                     }
                 }
@@ -77,11 +77,11 @@ public class PluginUtil {
             target = Bukkit.getPluginManager().loadPlugin(pluginFile);
         } catch (InvalidDescriptionException e) {
             //e.printStackTrace();
-            Main.getInstance().getLogger().severe("Invalid Description");
+            VSXReloader.getInstance().getLogger().severe("Invalid Description");
             return;
         } catch (InvalidPluginException e) {
             e.printStackTrace();
-            Main.getInstance().getLogger().severe("Invalid Plugin");
+            VSXReloader.getInstance().getLogger().severe("Invalid Plugin");
             return;
         }
 
@@ -139,11 +139,11 @@ public class PluginUtil {
 
             } catch (NoSuchFieldException e) {
                 e.printStackTrace();
-                Main.getInstance().getLogger().severe("Unloading failed.");
+                VSXReloader.getInstance().getLogger().severe("Unloading failed.");
                 return;
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
-                Main.getInstance().getLogger().severe("Unloading failed.");
+                VSXReloader.getInstance().getLogger().severe("Unloading failed.");
                 return;
             }
         }

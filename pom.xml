@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dscalzi</groupId>
-  <artifactId>VSReloader</artifactId>
+  <artifactId>VSXReloader</artifactId>
   <version>0.5.0</version>
-  <name>VirtualShop Reloader</name>
-  <description>Extension of VirtualShop to allow easy reloading.</description>
+  <name>VSXReloader</name>
+  <description>Extension of VirtualShopX to allow easy reloading.</description>
   
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,7 +20,7 @@
   </developers>
   
   <build>
-    <finalName>VSReloader</finalName>
+    <finalName>VSXReloader</finalName>
 	<defaultGoal>package</defaultGoal>
 	<resources>
         <resource>
