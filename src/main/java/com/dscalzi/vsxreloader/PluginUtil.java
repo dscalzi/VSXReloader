@@ -1,7 +1,7 @@
 /*
  * VSXReloader
- * Copyright (C) 2016-2017 Daniel D. Scalzi
- * See License.txt for license information.
+ * Copyright (C) 2016-2018 Daniel D. Scalzi
+ * See LICENSE for license information.
  */
 package com.dscalzi.vsxreloader;
 

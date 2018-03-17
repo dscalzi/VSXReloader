@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.dscalzi</groupId>
   <artifactId>VSXReloader</artifactId>
-  <version>0.6.0</version>
+  <version>0.7.0</version>
   <name>VSXReloader</name>
   <description>Extension of VirtualShopX to allow easy reloading.</description>
   <url>https://github.com/dscalzi/VSXReloader</url>
